@@ -1,0 +1,3 @@
+[submodule "E-MSBuild"]
+	path = E-MSBuild
+	url = https://github.com/3F/E-MSBuild.git

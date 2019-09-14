@@ -51,9 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\E-MSBuild\E-MSBuild.csproj" />
-    <ProjectReference Include="..\LSender\LSender.csproj" />
-    <ProjectReference Include="..\Varhead\Varhead.csproj" />
+    <ProjectReference Include="..\E-MSBuild\E-MSBuild\E-MSBuild.csproj" />
   </ItemGroup>
 
 </Project>
