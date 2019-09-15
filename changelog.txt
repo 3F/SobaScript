@@ -1,0 +1,16 @@
+SobaScript - https://github.com/3F/SobaScript
+_ _ _ _ _ _
+
+
+
+[1.14] 2019.09.??
+
+    * First public release of the SobaScript project. 
+      
+      Extensible Modular Scripting Programming Language
+      https://github.com/3F/SobaScript
+            
+      Previous changes can be found in:
+      https://github.com/3F/vsSolutionBuildEvent
+      
+      The number was based on latest changes for SBE-Scripts part from vsSolutionBuildEvent project.

@@ -2,13 +2,13 @@
 
 Interpreted Embedded Domain Specific a Weakly Typed an Extensible at runtime Modular Scripting Programming Language -- #SobaScript.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/sobascript/branch/master?svg=true)](https://ci.appveyor.com/project/3Fs/sobascript/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/yp8sklwsmas0kpwr/branch/master?svg=true)](https://ci.appveyor.com/project/3Fs/sobascript/branch/master)
 [![release-src](https://img.shields.io/github/release/3F/SobaScript.svg)](https://github.com/3F/SobaScript/releases/latest)
 [![License](https://img.shields.io/badge/License-MIT-74A5C2.svg)](https://github.com/3F/SobaScript/blob/master/License.txt)
 [![NuGet package](https://img.shields.io/nuget/v/SobaScript.svg)](https://www.nuget.org/packages/SobaScript/)
 [![Tests](https://img.shields.io/appveyor/tests/3Fs/sobascript/master.svg)](https://ci.appveyor.com/project/3Fs/sobascript/build/tests)
 
-[![Build history](https://buildstats.info/appveyor/chart/3Fs/sobascript?buildCount=20&includeBuildsFromPullRequest=true&showStats=true)](https://ci.appveyor.com/project/3Fs/sobascript/history)
+[![Build history](https://buildstats.info/appveyor/chart/3Fs/sobascript?buildCount=20&showStats=true)](https://ci.appveyor.com/project/3Fs/sobascript/history)
 
 ## License
 
