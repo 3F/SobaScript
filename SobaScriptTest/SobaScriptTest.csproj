@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SobaScript.Mapper\SobaScript.Mapper.csproj" />
-    <ProjectReference Include="..\SobaScript.Z.Core\SobaScript.Z.Core.csproj" />
     <ProjectReference Include="..\SobaScript\SobaScript.csproj" />
   </ItemGroup>
 

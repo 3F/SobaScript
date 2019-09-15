@@ -234,7 +234,7 @@ namespace net.r_eg.SobaScript
 
                     if(escape.Length > 1) {
                         LSender.Send(this, $"SBEScripts-Container: escape `{((raw.Length > 40) ? raw.Substring(0, 40) + "..." : raw)}`");
-                        return "#" + escapeMSBuildData(raw, true);
+                        return "#" + EscapeMSBuildData(raw, true);
                     }
 
                     data.content = hString != null ? hString.Recovery(raw) : raw;
@@ -266,7 +266,7 @@ namespace net.r_eg.SobaScript
         /// <param name="data"></param>
         /// <param name="force">only $(..) -> $$(..) if false / and $$(..) -> $$$(..), etc. if true</param>
         /// <returns></returns>
-        protected virtual string escapeMSBuildData(string data, bool force)
+        protected virtual string EscapeMSBuildData(string data, bool force)
         {
             string pattern = string.Format
             (
@@ -283,7 +283,7 @@ namespace net.r_eg.SobaScript
         /// <param name="data">Mixed data</param>
         /// <param name="c">Component</param>
         /// <returns>ready to parse or not</returns>
-        protected bool isReadyToParse(string data, IComponent c)
+        protected bool IsReadyToParse(string data, IComponent c)
         {
             if(!c.ARegex) {
                 return data.StartsWith(string.Format("[{0}", c.Activator));
@@ -305,12 +305,12 @@ namespace net.r_eg.SobaScript
                     continue;
                 }
 
-                if(isReadyToParse(data, c)) {
+                if(IsReadyToParse(data, c)) {
                     return parse(data, c);
                 }
             }
 
-            if(deepen(ref data.content)) {
+            if(Deepen(ref data.content)) {
                 ++_depthLevel;
                 data.content = parse(data, _depthLevel);
                 --_depthLevel;
@@ -319,10 +319,10 @@ namespace net.r_eg.SobaScript
             foreach(IComponent c in Components)
             {
                 if(c.BeforeDeepening) {
-                    continue; // should already parsed above
+                    continue; // should be already parsed above
                 }
 
-                if(isReadyToParse(data, c)) {
+                if(IsReadyToParse(data, c)) {
                     return parse(data, c);
                 }
             }
@@ -332,7 +332,7 @@ namespace net.r_eg.SobaScript
             );
         }
 
-        protected bool deepen(ref string data)
+        protected bool Deepen(ref string data)
         {
             return Pattern.Container.IsMatch(data);
         }
