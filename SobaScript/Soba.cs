@@ -299,7 +299,7 @@ namespace net.r_eg.SobaScript
 
             foreach(IComponent c in Components)
             {
-                c.PostProcessingMSBuild = data.postEvM;
+                c.PostProcessing = data.postEvM;
 
                 if(!c.BeforeDeepening) {
                     continue;

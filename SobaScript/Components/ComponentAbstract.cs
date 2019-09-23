@@ -72,10 +72,10 @@ namespace net.r_eg.SobaScript.Components
         } = true;
 
         /// <summary>
-        /// Allows post-processing with MSBuild core.
+        /// Allows post-processing with used evaluator engine.
         /// Some components may require immediate processing with evaluation before passing control to the next level.
         /// </summary>
-        public virtual bool PostProcessingMSBuild
+        public virtual bool PostProcessing
         {
             get;
             set;

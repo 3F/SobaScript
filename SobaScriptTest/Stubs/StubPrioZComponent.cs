@@ -7,7 +7,7 @@ namespace SobaScriptTest.Stubs
     {
         public override string Activator => nameof(StubPrioZComponent);
 
-        public override string Eval(string data) => Value.From(PostProcessingMSBuild);
+        public override string Eval(string data) => Value.From(PostProcessing);
 
         public StubPrioZComponent()
         {
